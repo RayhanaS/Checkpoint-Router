@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App {
+    text-align: center;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c16cf196-e89e-4c46-8cc7-f2eca6fb0762/356f5a77-262b-4e46-bf8f-fac3c1b3bb20/TN-fr-20220103-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    /* (./component/movies/cinema-wallpaper-social-media-message-background-vector.jpg); */
+    -webkit-animation: backgroundScroll 20s linear infinite;
+  animation: backgroundScroll 20s linear infinite;
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @-webkit-keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -400px 0;}
   }
-  to {
-    transform: rotate(360deg);
+          
+  @keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -400px 0;}
   }
-}
+    .Netflix{
+      color:red ;
+      font-family: monospace;
+      font-size: 30px ;
+      font-weight: bold
+
+    }
+    #basic-navbar-nav{
+      position: absolute;
+     margin-left: 930px;
+  }
+  .filter{
+    width: 50%;
+    display: flex;
+  }
+
+  .movieList{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5%;
+  }
+  
+  
+  p.card-text {
+    height: 95px;
+    overflow: hidden;
+  }
+  img.card-img-top {
+    height: 300px;
+  }
+  .card{
+    width: 18rem;
+      height: 510px;
+      margin: 20px;
+      justify-content: center;
+     
+  }
+  .navbar{
+    background-color: black;
+  }
+  .container{
+    background-color:black;
+  }
+  .classe{
+    color: white;
+  }
+   .fa-star{
+     color: gold;
+   }
+ 
+ 
+    
+    
